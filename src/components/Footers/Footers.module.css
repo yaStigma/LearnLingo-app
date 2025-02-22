@@ -1,0 +1,32 @@
+.wrapper {
+  border: 1.5px dashed var(--color-accent-first);
+  border-radius: 30px;
+  max-width: 1312px;
+  min-height: 116px;
+  padding: 40px 122px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+.bloc {
+  display: flex;
+}
+.count {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 114%;
+  letter-spacing: -0.02em;
+  color: var(--color-text-dark);
+  margin-right: 16px;
+}
+.name {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  color: var(--color-text-gray);
+  width: 76px;
+}
