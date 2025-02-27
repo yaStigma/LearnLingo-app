@@ -1,7 +1,7 @@
 .wrapper {
   border: 1.5px dashed var(--color-accent-first);
   border-radius: 30px;
-  max-width: 1312px;
+  width: 1312px;
   min-height: 116px;
   padding: 40px 122px;
   display: flex;
