@@ -45,6 +45,7 @@
   padding: 16px 88px;
   width: 267px;
   height: 60px;
+  cursor: pointer;
   background-color: var(--color-accent-first);
 }
 .button:hover,

@@ -1,4 +1,6 @@
+import { Link } from "react-router";
 import Footers from "../../components/Footers/Footers";
+
 import CSS from "./HomePage.module.css";
 export default function HomePage() {
   return (
@@ -14,9 +16,11 @@ export default function HomePage() {
             Elevate your language proficiency to new heights by connecting with
             highly qualified and experienced tutors.
           </p>
-          <button type="button" className={CSS.button}>
-            Get started
-          </button>
+          <Link to="/teachers">
+            <button type="button" className={CSS.button}>
+              Get started
+            </button>
+          </Link>
         </section>
         <section className={CSS.imgBox}>
           <img className={CSS.img} src="/girl.svg" alt="Girl with computer" />

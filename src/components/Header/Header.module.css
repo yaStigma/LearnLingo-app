@@ -6,4 +6,72 @@
   flex-direction: row;
   max-width: 1184px;
   min-height: 48px;
+  margin: 20px 64px;
+}
+
+.logo {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.logoText {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: var(--color-text-dark);
+  padding-left: 8px;
+}
+.navLink {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  color: var(--color-text-dark);
+  text-decoration: none;
+}
+.nav {
+  width: 138px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.activeLink {
+  text-decoration: overline 2px var(--color-accent-first);
+}
+.auth {
+  width: 255px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.logIn {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 125%;
+  color: var(--color-text-dark);
+  background-color: transparent;
+  border: 0;
+  width: 73px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.registration {
+  border-radius: 12px;
+  padding: 14px 39px;
+  width: 166px;
+  height: 48px;
+  background-color: var(--color-text-dark);
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 125%;
+  color: var(--color-backgound-main);
+  cursor: pointer;
 }

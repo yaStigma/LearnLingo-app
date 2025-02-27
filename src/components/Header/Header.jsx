@@ -1,19 +1,23 @@
 import { Link, NavLink } from "react-router-dom";
 import CSS from "./Header.module.css";
+import clsx from "clsx";
+
+const getNavLinkClass = (props) => {
+  return clsx(CSS.navLink, props.isActive && CSS.activeLink);
+};
+
 export default function Header() {
   return (
     <header className={CSS.wrapper}>
-      <div className={CSS.logoBox}>
-        <Link to="/" className={CSS.logo}>
-          <img src="/ukraine.svg" alt="Ukraine flag logo" />
-          LearnLingo
-        </Link>
-      </div>
+      <Link to="/" className={CSS.logo}>
+        <img src="/ukraine.svg" alt="Ukraine flag logo" />
+        <p className={CSS.logoText}>LearnLingo</p>
+      </Link>
       <nav className={CSS.nav}>
-        <NavLink to="/" className={CSS.navLink}>
+        <NavLink to="/" className={getNavLinkClass}>
           Home
         </NavLink>
-        <NavLink to="/teachers" className={CSS.navLink}>
+        <NavLink to="/teachers" className={getNavLinkClass}>
           Teachers
         </NavLink>
       </nav>
