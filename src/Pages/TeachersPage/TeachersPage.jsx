@@ -1,3 +1,11 @@
+import Filters from "../../components/Filters/Filters";
+import TeachersList from "../../components/TeachersList/TeachersList";
+import CSS from "./TeachersPage.module.css";
 export default function TeachersPage() {
-  return <h1>Coming soon Teachers Page</h1>;
+  return (
+    <div className={CSS.wrapper}>
+      <Filters />
+      <TeachersList />
+    </div>
+  );
 }

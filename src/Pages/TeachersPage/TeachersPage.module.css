@@ -1,0 +1,5 @@
+.wrapper {
+  display: flex;
+  max-width: 1312px;
+  background-color: var(--color-background-gray);
+}
