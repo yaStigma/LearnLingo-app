@@ -3,7 +3,7 @@ export default function NotFoundPage() {
   return (
     <main className={CSS.wrapper}>
       <h2 className={CSS.title}>Page not found</h2>
-      <p className={CSS.text}>Please return to home page</p>
+      <p className={CSS.text}>Please return to Home page</p>
     </main>
   );
 }

@@ -21,9 +21,8 @@ export default function App() {
           <Route index element={<HomePage />} />
           <Route path="teachers" element={<TeachersPage />} />
           <Route path="favorites" element={<FavoritesPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Route>
-
-        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </Suspense>
   );
