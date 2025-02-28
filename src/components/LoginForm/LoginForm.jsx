@@ -5,7 +5,10 @@ import * as yup from "yup";
 import { Eye, EyeOff } from "lucide-react";
 import CSS from "./LoginForm.module.css";
 import { useState } from "react";
-export default function LoginForm() {
+import PropTypes from "prop-types";
+import { auth } from "../../firebase";
+import { signInWithEmailAndPassword } from "firebase/auth";
+export default function LoginForm({ closeModal }) {
   const [showPassword, setShowPassword] = useState(false);
   const loginSchema = yup.object().shape({
     email: yup.string().email("Incorrect email").required("Required field"),
@@ -23,7 +26,15 @@ export default function LoginForm() {
     resolver: yupResolver(loginSchema),
   });
 
-  const onSubmit = (data) => console.log("Login successful", data);
+  const onSubmit = async (data) => {
+    try {
+      await signInWithEmailAndPassword(auth, data.email, data.password);
+      alert("Successfully!");
+      closeModal();
+    } catch (error) {
+      alert(error.message);
+    }
+  };
 
   return (
     <div>
@@ -66,3 +77,6 @@ export default function LoginForm() {
     </div>
   );
 }
+LoginForm.propTypes = {
+  closeModal: PropTypes.func.isRequired,
+};

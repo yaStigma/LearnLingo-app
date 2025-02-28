@@ -1,11 +1,13 @@
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-
+import { auth } from "../../firebase";
+import { createUserWithEmailAndPassword } from "firebase/auth";
 import { Eye, EyeOff } from "lucide-react";
 import CSS from "./RegisterForm.module.css";
 import { useState } from "react";
-export default function RegisterForm() {
+import PropTypes from "prop-types";
+export default function RegisterForm({ closeModal }) {
   const [showPassword, setShowPassword] = useState(false);
   const registerSchema = yup.object().shape({
     name: yup
@@ -27,7 +29,15 @@ export default function RegisterForm() {
     resolver: yupResolver(registerSchema),
   });
 
-  const onSubmit = (data) => console.log("Registration successful", data);
+  const onSubmit = async (data) => {
+    try {
+      await createUserWithEmailAndPassword(auth, data.email, data.password);
+      alert("Successfully!");
+      closeModal();
+    } catch (error) {
+      alert(error.message);
+    }
+  };
 
   return (
     <div>
@@ -72,3 +82,6 @@ export default function RegisterForm() {
     </div>
   );
 }
+RegisterForm.propTypes = {
+  closeModal: PropTypes.func.isRequired,
+};

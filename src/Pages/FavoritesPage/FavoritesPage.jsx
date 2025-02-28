@@ -1,5 +1,3 @@
 export default function FavoritesPage() {
-    return(
-        Coming soon Favorites Page
-    )
-};
+  return <p>Coming soon Favorites Page</p>;
+}

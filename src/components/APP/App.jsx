@@ -28,3 +28,12 @@ export default function App() {
     </Suspense>
   );
 }
+
+// const fetchTeachers = async () => {
+//   const response = await fetch("https://your-database.firebaseio.com/teachers.json");
+//   const data = await response.json();
+//   console.log(data);
+// };
+// useEffect(() => {
+//   fetchTeachers();
+// }, []);
