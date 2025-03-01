@@ -1,0 +1,206 @@
+.wrapper {
+  border-radius: 24px;
+  padding: 24px;
+  width: 1184px;
+  height: max-content;
+  background-color: var(--color-backgound-main);
+  display: flex;
+  margin-bottom: 32px;
+}
+.avatarBox {
+  border: 3px solid var(--color-accent-second);
+  border-radius: 100px;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-right: 48px;
+}
+.avatarBox::after {
+  content: url("/public/active.svg");
+  position: absolute;
+  right: 16px;
+  top: 20%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.avatar {
+  border-radius: 100px;
+  width: 96px;
+  height: 96px;
+}
+
+.levelList {
+  display: flex;
+}
+.levelItem {
+  display: flex;
+  border: 1px solid rgba(18, 20, 23, 0.2);
+  border-radius: 35px;
+  padding: 8px 12px;
+  width: fit-content;
+  height: 32px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 114%;
+  color: var(--color-text-dark);
+  background-color: var(--color-backgound-main);
+  margin-right: 8px;
+}
+.levelItem:first-child {
+  background-color: var(--color-accent-first);
+  border: 0;
+}
+.btn {
+  border-radius: 12px;
+  padding: 16px 48px;
+  width: 232px;
+  height: 60px;
+  margin-top: 32px;
+  border: 0;
+  background-color: var(--color-accent-first);
+  cursor: pointer;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 156%;
+  color: var(--color-text-dark);
+}
+.btn:hover,
+.btn:focus {
+  background-color: var(--color-accent-second);
+}
+.reviewerName {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--color-text-dark-gray);
+}
+.reviewerRating {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 129%;
+  color: var(--color-text-dark);
+  margin-left: 8px;
+}
+.ratingBox {
+  display: flex;
+}
+.reviewInfo {
+  display: flex;
+  margin-left: 12px;
+  flex-direction: column;
+}
+.reviews {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+.reviewBox {
+  display: flex;
+}
+.commentText {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--color-text-dark);
+  margin-top: 16px;
+}
+.experience {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--color-text-dark);
+  margin-bottom: 32px;
+}
+.btnReadMore {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: var(--color-text-dark);
+  border: 0;
+  background-color: transparent;
+  margin-bottom: 32px;
+}
+.infoBlock {
+  margin-bottom: 16px;
+}
+.info {
+  width: 968px;
+}
+.reference {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--color-text-dark);
+  margin-bottom: 8px;
+}
+.referenceSpeak {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+.referenceName {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--color-text-dark-gray);
+  margin-bottom: 8px;
+}
+.teacherName {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  color: var(--color-text-dark);
+  margin-bottom: 32px;
+}
+.infoBlockHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.infoBlockHeaderList {
+  display: flex;
+}
+.infoBlockHeaderItem {
+  display: flex;
+  padding-right: 16px;
+  padding-left: 16px;
+  border-right: 1px solid rgba(18, 20, 23, 0.2);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--color-text-dark);
+}
+.infoBlockHeaderItem:last-child {
+  border: 0;
+}
+.icon {
+  padding-right: 8px;
+}
+.spanPrise {
+  color: #38cd3e;
+}
+.heartIcon {
+  width: 26px;
+  height: 26px;
+}
+.btnFavorite {
+  width: 26px;
+  height: 26px;
+  border: 0;
+  background-color: transparent;
+}
