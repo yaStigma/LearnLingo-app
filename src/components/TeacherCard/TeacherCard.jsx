@@ -29,7 +29,7 @@ export default function TeacherCard({ teacher }) {
               <ul className={CSS.infoBlockHeaderList}>
                 <li className={CSS.infoBlockHeaderItem}>
                   <img
-                    src="/public/book-open-01.svg"
+                    src="/book-open-01.svg"
                     alt="book icon"
                     className={CSS.icon}
                   />
@@ -39,11 +39,7 @@ export default function TeacherCard({ teacher }) {
                   Lessons done: {lessons_done}
                 </li>
                 <li className={CSS.infoBlockHeaderItem}>
-                  <img
-                    src="/public/star.svg"
-                    alt="rating star"
-                    className={CSS.icon}
-                  />{" "}
+                  <img src="/star.svg" alt="rating star" className={CSS.icon} />{" "}
                   Rating: {rating}
                 </li>
                 <li className={CSS.infoBlockHeaderItem}>
@@ -53,11 +49,7 @@ export default function TeacherCard({ teacher }) {
               </ul>{" "}
             </div>
             <button type="button" className={CSS.btnFavorite}>
-              <img
-                src="/public/heart.svg"
-                alt="favorites"
-                className={CSS.heartIcon}
-              />
+              <img src="/heart.svg" alt="favorites" className={CSS.heartIcon} />
             </button>
           </div>
 
